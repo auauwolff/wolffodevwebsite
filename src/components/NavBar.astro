@@ -1,0 +1,160 @@
+---
+import { Icon } from "astro-icon";
+// import MenuButton from './MenuButton';
+
+// export function toggleMenu() {
+//   const menu = document.getElementById('menu');
+//   console.log('click')
+//   menu.classList.toggle('hidden');
+// }
+
+//   function Menu(e){
+//     console.log('teste')
+//   let list = document.querySelector('ul');
+//   e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+// }
+---
+
+<div class="drawer">
+  <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content flex flex-col">
+    <!-- Navbar -->
+    <div class="w-full navbar lg:p-10">
+      <div class="flex-1 px-2 mx-2">
+        <Icon name="logo" class="w-20 cursor-pointer" />
+      </div>
+      <div class="flex-none lg:hidden">
+        <label for="my-drawer-3" class="btn btn-square btn-ghost">
+          <Icon name="ic:round-menu" class="w-10" />
+        </label>
+      </div>
+
+      <nav class="flex-none hidden lg:block">
+        <ul class="menu menu-horizontal">
+          <!-- Navbar menu content here -->
+          <li><a class="text-xl mx-10 hover:text-primary bg-white">Home</a></li>
+          <li><a class="text-xl mx-10 hover:text-primary bg-white">Blog</a></li>
+          <li>
+            <a class="text-xl mx-10 hover:text-primary bg-white">Solutions</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Page content here -->
+    <div class="hero min-h-screen bg-base-200">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">Hello there</h1>
+          <p class="py-6">
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
+            a id nisi.
+          </p>
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="drawer-side">
+    <label for="my-drawer-3" class="drawer-overlay"></label>
+    <ul class="menu p-4 w-80 bg-neutral">
+      <!-- Sidebar content here -->
+      <li><a class="text-xl text-white hover:text-primary">Home</a></li>
+      <li><a class="text-xl text-white hover:text-primary">Blog</a></li>
+      <li><a class="text-xl text-white hover:text-primary">Solutions</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- <nav class="md:flex md:items-center md:justify-between" >
+  <div class="flex justify-between items-center">
+
+    <Icon name="logo" class="w-20  cursor-pointer"/>
+    <button class="menu-button"> <Icon name="ic:round-menu" class="w-10 cursor-pointer md:hidden block" /></button>
+    <Icon name="ic:round-menu" class="w-10 cursor-pointer md:hidden block" />
+    <MenuButton  client:visible> teste</MenuButton>
+  
+  </div>
+  <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+    <li class="mx-4 my-6 md:my-0 ">
+      <a href="/" class="text-xl hover:text-blue-700 duration-500">Home</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+      <a href="/" class="text-xl hover:text-blue-700 duration-500">Blog</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+      <a href="/" class="text-xl hover:text-blue-700 duration-500">Solutions</a>
+    </li>
+  </ul>
+
+</nav>
+
+<script>
+  // Find all buttons with the `alert` class on the page.
+  const buttons = document.querySelectorAll('button.menu-button');
+
+  // Handle clicks on each button.
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      alert('Button was clicked!');
+    });
+  });
+</script> -->
+
+<!-- <script>
+  function Menu(e){
+    let list = document.querySelector('ul');
+    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+  }
+</script> -->
+
+<!-- <nav class="bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex">
+          <div class="flex-shrink-0 flex items-center">
+
+            <a href="#" class="text-white font-bold text-lg">Logo</a>
+          </div>
+          <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
+            <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Menu 1</a>
+            <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Menu 2</a>
+            <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Menu 3</a>
+          </div>
+        </div>
+        <div class="hidden sm:flex sm:items-center sm:ml-6">
+         
+        </div>
+        <div class="flex items-center sm:hidden">
+          <button on:click={toggleMenu} class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <path
+                x-show="!isOpen"
+                d="M4 6h16M4 12h16M4 18h16"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                x-show="isOpen"
+                d="M6 18L18 6M6 6l12 12"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="menu" class="sm:hidden bg-gray-800">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Menu 1</a>
+        <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Menu 2</a>
+        <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Menu 3</a>
+      </div>
+    </div>
+  </nav>
+   -->
