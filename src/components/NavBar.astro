@@ -47,7 +47,7 @@ import Hero from "../images/Hero.png";
           alt="Hero image desktop"
           class="hidden lg:block"
           width={1200}
-          height={700}
+          height={650}
           src={Hero}
         />
         <Image
@@ -57,7 +57,7 @@ import Hero from "../images/Hero.png";
           width={390}
           src={MobileHero}
         />
-        <div class="flex flex-col items-start pt-7">
+        <div class="flex flex-col items-start pt-7 lg:pt-20">
           <div class="flex items-center justify-center my-3 lg:my-7">
             <Icon name="itsolutions" class="w-20 mx-4 lg:w-40" />
             <div class="flex flex-col">
@@ -88,7 +88,12 @@ import Hero from "../images/Hero.png";
           </div>
 
           <div class="flex items-center justify-center my-3 lg:my-7">
-            <Icon name="development" class="w-20 mx-4 lg:w-40" />
+            <Icon
+              width={130}
+              name="development"
+              class="mx-4 lg:block sm:hidden"
+            />
+            <Icon width={80} name="development" class="mx-4 lg:hidden" />
             <div class="flex flex-col">
               <h4 class="text-neutral font-semibold lg:text-2xl">
                 Development
