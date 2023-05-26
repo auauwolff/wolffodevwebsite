@@ -1,0 +1,25 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<div class="w-full navbar lg:p-10">
+  <div class="flex-1 px-2 mx-2">
+    <Icon name="logo" class="w-20 cursor-pointer" />
+  </div>
+  <div class="flex-none lg:hidden">
+    <label for="my-drawer-3" class="btn btn-square btn-ghost">
+      <Icon name="ic:round-menu" class="w-10" />
+    </label>
+  </div>
+
+  <nav class="flex-none hidden lg:block">
+    <ul class="menu menu-horizontal">
+      <!-- Navbar menu content here -->
+      <li><a class="text-xl mx-10 hover:text-primary bg-white">Home</a></li>
+      <li><a class="text-xl mx-10 hover:text-primary bg-white">Blog</a></li>
+      <li>
+        <a class="text-xl mx-10 hover:text-primary bg-white">Solutions</a>
+      </li>
+    </ul>
+  </nav>
+</div>
