@@ -1,0 +1,64 @@
+---
+import { Image } from "@astrojs/image/components";
+import cheers from "../../images/cheers.png";
+---
+
+<div class="py-20 px-20">
+  <div class="flex flex-col items-center justify-center text-center">
+    <h1 class="text-black text-4xl font-bold lg:text-6xl">
+      OUR UNIQUE APPROACH
+    </h1>
+    <p class="text-secondary font-semibold mt-2 lg:m-4 lg:text-lg">
+      We use innovative solutions to help our clients achieve their business
+      goals in a cost-effective manner.
+    </p>
+  </div>
+
+  <div class="flex items-center justify-evenly lg:my-36">
+    <div>
+      <div class="my-20">
+        <div
+          class="w-14 h-14 bg-primary text-white text-xl font-semibold flex items-center justify-center rounded-md lg:text-2xl"
+        >
+          01
+        </div>
+        <h2 class="mt-4 text-black font-bold text-2xl lg:text-4xl">
+          Client-Centered
+        </h2>
+        <p class="text-secondary font-semibold text-lg lg:text-xl">
+          Our approach is focused on understanding and meeting the unique needs
+          of each client.
+        </p>
+      </div>
+      <div class="my-20">
+        <div
+          class="w-14 h-14 bg-primary text-white text-xl font-semibold flex items-center justify-center rounded-md lg:text-2xl"
+        >
+          02
+        </div>
+        <h2 class="mt-4 text-black font-bold text-2xl lg:text-4xl">
+          Exceptional Support
+        </h2>
+        <p class="text-secondary font-semibold text-lg lg:text-xl">
+          We provide exceptional support to our clients before, during, and
+          after the project is completed.
+        </p>
+      </div>
+      <div class="my-20">
+        <div
+          class="w-14 h-14 bg-primary text-white text-xl font-semibold flex items-center justify-center rounded-md lg:text-2xl"
+        >
+          03
+        </div>
+        <h2 class="mt-4 text-black font-bold text-2xl lg:text-4xl">
+          Competitive Pricing
+        </h2>
+        <p class="text-secondary font-semibold text-lg lg:text-xl">
+          We offer competitive pricing without sacrificing quality.
+        </p>
+      </div>
+    </div>
+
+    <Image alt="Office people cheering" class="hidden lg:block" src={cheers} />
+  </div>
+</div>
