@@ -1,9 +1,9 @@
 ---
-import { Image } from "@astrojs/image/components";
-import cheers from "../../images/cheers.png";
+import { Image } from "astro:assets";
+import cheers from "../../assets/images/cheers.png";
 ---
 
-<div class="py-20 px-20">
+<div class="py-20 px-10 lg:px-20">
   <div class="flex flex-col items-center justify-center text-center">
     <h1 class="text-black text-4xl font-bold lg:text-6xl">
       OUR UNIQUE APPROACH
@@ -14,9 +14,9 @@ import cheers from "../../images/cheers.png";
     </p>
   </div>
 
-  <div class="flex items-center justify-evenly lg:my-36">
+  <div class="flex items-center justify-evenly mt-20 lg:my-20">
     <div>
-      <div class="my-20">
+      <div>
         <div
           class="w-14 h-14 bg-primary text-white text-xl font-semibold flex items-center justify-center rounded-md lg:text-2xl"
         >
@@ -25,7 +25,7 @@ import cheers from "../../images/cheers.png";
         <h2 class="mt-4 text-black font-bold text-2xl lg:text-4xl">
           Client-Centered
         </h2>
-        <p class="text-secondary font-semibold text-lg lg:text-xl">
+        <p class="text-secondary font-semibold text-lg text-justify lg:text-xl">
           Our approach is focused on understanding and meeting the unique needs
           of each client.
         </p>
@@ -39,7 +39,7 @@ import cheers from "../../images/cheers.png";
         <h2 class="mt-4 text-black font-bold text-2xl lg:text-4xl">
           Exceptional Support
         </h2>
-        <p class="text-secondary font-semibold text-lg lg:text-xl">
+        <p class="text-secondary font-semibold text-lg text-justify lg:text-xl">
           We provide exceptional support to our clients before, during, and
           after the project is completed.
         </p>
@@ -53,7 +53,7 @@ import cheers from "../../images/cheers.png";
         <h2 class="mt-4 text-black font-bold text-2xl lg:text-4xl">
           Competitive Pricing
         </h2>
-        <p class="text-secondary font-semibold text-lg lg:text-xl">
+        <p class="text-secondary font-semibold text-lg text-justify lg:text-xl">
           We offer competitive pricing without sacrificing quality.
         </p>
       </div>

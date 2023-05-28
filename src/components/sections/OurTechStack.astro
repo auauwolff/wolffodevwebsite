@@ -1,10 +1,10 @@
 ---
-import { Image } from "@astrojs/image/components";
-import figma_log from "../../images/figma_log.png";
-import astro_logo from "../../images/astro_logo.png";
-import react_logo from "../../images/react_logo.png";
-import shopify_logo from "../../images/shopify_logo.png";
-import square_logo from "../../images/square_logo.png";
+import { Image } from "astro:assets";
+import figma_log from "../../assets/images/figma_log.png";
+import astro_logo from "../../assets/images/astro_logo.png";
+import react_logo from "../../assets/images/react_logo.png";
+import shopify_logo from "../../assets/images/shopify_logo.png";
+import square_logo from "../../assets/images/square_logo.png";
 ---
 
 <div class="bg-black py-20 flex flex-col items-center justify-center">
@@ -16,55 +16,56 @@ import square_logo from "../../images/square_logo.png";
   </div>
 
   <div
-    class="carousel carousel-center p-4 space-x-4 bg-neutral rounded-box py-32 max-w-md lg:max-w-none"
+    class="carousel carousel-center p-4 space-x-4 bg-neutral rounded-box py-12 lg:py-20 max-w-md lg:max-w-none"
   >
     <div
-      class="carousel-item flex flex-col items-center justify-center max-w-sm text-center px-16"
+      class="carousel-item flex flex-col items-center justify-center max-w-sm text-center"
     >
-      <Image alt="Figma logo" height={100} width={100} src={figma_log} />
-      <p class="text-white text-xl pt-2">Figma</p>
-      <p class="text-secondary font-semibold text-lg pt-2">
+      <Image alt="Figma logo" height={80} width={80} src={figma_log} />
+      <p class="text-white text-lg pt-2">Figma</p>
+      <p class="text-secondary font-semibold text-sm pt-2">
         A cloud-based design tool that allows for collaboration and prototyping.
       </p>
     </div>
 
     <div
-      class="carousel-item flex flex-col items-center justify-center max-w-sm text-center px-16"
+      class="carousel-item flex flex-col items-center justify-center max-w-sm text-center"
     >
-      <Image alt="Astro logo" height={100} width={100} src={astro_logo} />
-      <p class="text-white text-xl pt-2">Astro</p>
-      <p class="text-secondary font-semibold text-lg pt-2">
+      <Image alt="Astro logo" height={80} width={80} src={astro_logo} />
+      <p class="text-white text-lg pt-2">Astro</p>
+      <p class="text-secondary font-semibold text-sm p-3">
         A modern static site builder that optimizes performance and developer
         experience.
       </p>
     </div>
     <div
-      class="carousel-item flex flex-col items-center justify-center max-w-sm text-center px-16"
+      class="carousel-item flex flex-col items-center justify-center max-w-sm text-center"
     >
-      <Image alt="React logo" height={100} width={100} src={react_logo} />
-      <p class="text-white text-xl pt-2">React</p>
-      <p class="text-secondary font-semibold text-lg pt-2">
+      <Image alt="React logo" height={80} width={80} src={react_logo} />
+      <p class="text-white text-lg pt-2">React</p>
+      <p class="text-secondary font-semibold text-sm p-3">
         A popular JavaScript library for building user interfaces.
       </p>
     </div>
     <div
-      class="carousel-item flex flex-col items-center justify-center max-w-sm text-center px-16"
+      class="carousel-item flex flex-col items-center justify-center max-w-sm text-center"
     >
-      <Image alt="Squareup logo" height={100} width={100} src={square_logo} />
-      <p class="text-white text-xl pt-2">Squareup</p>
-      <p class="text-secondary font-semibold text-lg pt-2">
+      <Image alt="Squareup logo" height={80} width={80} src={square_logo} />
+      <p class="text-white text-lg pt-2">Squareup</p>
+      <p class="text-secondary font-semibold text-sm p-3">
         A payment processing platform for small businesses and online stores.
       </p>
     </div>
-    <div
-      class="carousel-item flex flex-col items-center justify-center max-w-sm text-center px-16"
+    <!-- <div
+      class="carousel-item flex flex-col items-center justify-center max-w-sm text-center"
     >
-      <Image alt="Shopify logo" height={100} width={100} src={shopify_logo} />
-      <p class="text-white text-xl pt-2">Shopify</p>
-      <p class="text-secondary font-semibold text-lg pt-2">
+      <Image alt="Shopify logo" height={80} width={80} src={shopify_logo} />
+      <p class="text-white text-lg pt-2">Shopify</p>
+      <p class="text-secondary font-semibold text-sm p-3">
         An e-commerce platform for online stores that provides tools for
         managing inventory, shipping, and payments.
       </p>
     </div>
+  </div> -->
   </div>
 </div>
