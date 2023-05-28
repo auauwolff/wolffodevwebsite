@@ -2,8 +2,8 @@
 import { Icon } from "astro-icon";
 ---
 
-<div class="w-full navbar lg:p-10">
-  <div class="flex-1 px-2 mx-2">
+<div class="w-full navbar lg:my-4">
+  <div class="flex-1 px-2 mx-2 lg:ml-8">
     <Icon name="logo" width={70} class="cursor-pointer" />
   </div>
   <div class="flex-none lg:hidden">
@@ -16,9 +16,15 @@ import { Icon } from "astro-icon";
     <ul class="menu menu-horizontal">
       <!-- Navbar menu content here -->
       <li><a class="text-md mx-5 hover:text-primary bg-white">Home</a></li>
-      <li><a class="text-md mx-5 hover:text-primary bg-white">Blog</a></li>
       <li>
-        <a class="text-md mx-5 hover:text-primary bg-white">Projects</a>
+        <a href="/comingsoon/" class="text-md mx-5 hover:text-primary bg-white"
+          >Blog</a
+        >
+      </li>
+      <li>
+        <a href="#projects" class="text-md mx-5 hover:text-primary bg-white"
+          >Projects</a
+        >
       </li>
     </ul>
   </nav>
