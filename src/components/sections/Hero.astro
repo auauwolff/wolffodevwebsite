@@ -1,8 +1,8 @@
 ---
 import { Icon } from "astro-icon";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import MobileHero from "../../images/MobileHero.png";
-import Hero from "../../images/Hero.png";
+import hero_img from "../../assets/images/hero_img.png";
 import NavBar from "./NavBar.astro";
 import SideDrawerMenu from "./SideDrawerMenu.astro";
 ---
@@ -24,6 +24,23 @@ import SideDrawerMenu from "./SideDrawerMenu.astro";
 
       <div class="flex items-center my-10">
         <Image
+          src={hero_img}
+          width="800"
+          alt={"two guys talking in front of a compute"}
+        />
+        <!-- <img
+          src={hero_img}
+          width={1200}
+          height={650}
+          alt="A rocketship in space."
+        /> -->
+        <!-- <img
+          src="../../images/hero_img.png"
+          width={1200}
+          height={650}
+          alt="two guys talking in front of a computer"
+        /> -->
+        <!-- <Image
           alt="Hero image desktop"
           class="hidden lg:block"
           width={1200}
@@ -32,11 +49,11 @@ import SideDrawerMenu from "./SideDrawerMenu.astro";
         />
         <Image
           class="block lg:hidden"
-          alt="Hero image mobile"
+          alt="two guys talking in front o f a computer"
           height={370}
           width={390}
           src={MobileHero}
-        />
+        /> -->
         <div class="flex flex-col items-start pt-7 lg:pt-20">
           <div class="flex items-center justify-center my-3 lg:my-7">
             <Icon name="itsolutions" class="w-20 mx-4 lg:w-40" />
