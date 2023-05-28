@@ -1,0 +1,48 @@
+---
+import { Image } from "@astrojs/image/components";
+import cheers from "../../images/cheers.png";
+import letsworkdesktop from "../../images/letsworkdesktop.png";
+---
+
+<div class="py-20 px-5 lg:px-40">
+  <div class="hidden lg:flex lg:items-center">
+    <Image
+      alt="desktop with code image"
+      class="hidden lg:block"
+      width={1000}
+      src={letsworkdesktop}
+    />
+    <div class="flex flex-col text-justify mx-40">
+      <h1 class="text-black text-4xl font-bold lg:text-6xl">
+        Let's work together to transform your business today!
+      </h1>
+      <p class="text-secondary font-semibold mt-4 lg:my-14 lg:text-2xl">
+        Partner with us to unlock your business's full potential. We will work
+        closely with you to develop custom solutions tailored to your unique
+        needs. Let's start the journey towards success together.
+      </p>
+      <label
+        for="my-modal-6"
+        class="btn btn-lg btn-primary text-white mt-5 w-40">Let's Talk</label
+      >
+    </div>
+  </div>
+
+  <div class="lg:hidden flex flex-col text-justify">
+    <h1 class="text-black text-4xl font-bold lg:text-6xl">
+      Let's work together to transform your business today!
+    </h1>
+    <p class="text-secondary font-semibold mt-4 lg:m-4 lg:text-lg">
+      Partner with us to unlock your business's full potential. We will work
+      closely with you to develop custom solutions tailored to your unique
+      needs. Let's start the journey towards success together.
+    </p>
+  </div>
+  <div class="flex flex-col items-center justify-center my-12">
+    <Image alt="Office people cheering" class="block lg:hidden" src={cheers} />
+    <label
+      for="my-modal-6"
+      class="lg:hidden btn btn-lg btn-primary text-white mt-5">Let's Talk</label
+    >
+  </div>
+</div>
