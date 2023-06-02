@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon";
 ---
 
+<!-- 
 <div class="w-full navbar lg:my-4">
   <div class="flex-1 px-2 mx-2 lg:ml-8">
     <Icon name="logo" width={70} class="cursor-pointer" />
@@ -14,7 +15,6 @@ import { Icon } from "astro-icon";
 
   <nav class="flex-none hidden lg:block">
     <ul class="menu menu-horizontal">
-      <!-- Navbar menu content here -->
       <li>
         <a href="/" class="text-md mx-5 hover:text-primary bg-white">Home</a>
       </li>
@@ -30,4 +30,42 @@ import { Icon } from "astro-icon";
       </li>
     </ul>
   </nav>
+</div> -->
+<div class="navbar bg-base-100 p-6 lg:p-10 lg:px-14">
+  <Icon name="logo" width={70} class="cursor-pointer" />
+  <div class="navbar-end flex-1">
+    <div class="dropdown dropdown-end">
+      <label tabindex="0" class="btn btn-ghost lg:hidden">
+        <Icon name="menu" width={25} class="cursor-pointer" />
+      </label>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+      >
+        <li>
+          <a class="text-black hover:text-primary" href="/">Home</a>
+        </li>
+        <li>
+          <a class="text-black hover:text-primary" href="/comingsoon/">Blog</a>
+        </li>
+        <li>
+          <a class="text-black hover:text-primary" href="#projects">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="navbar-end hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li>
+        <a class="text-black hover:text-primary" href="/">Home</a>
+      </li>
+      <li>
+        <a class="text-black hover:text-primary" href="/comingsoon/">Blog</a>
+      </li>
+      <li>
+        <a class="text-black hover:text-primary" href="#projects">Projects</a>
+      </li>
+    </ul>
+  </div>
 </div>
