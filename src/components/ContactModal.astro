@@ -1,4 +1,4 @@
-<input type="checkbox" id="my-modal-6" class="modal-toggle" />
+<!-- <input type="checkbox" id="my-modal-6" class="modal-toggle" />
 <div class="modal modal-bottom sm:modal-middle">
   <div class="modal-box">
     <h1 class="text-lg font-semibold">Say Hello!</h1>
@@ -30,4 +30,35 @@
       <label for="my-modal-6" class="btn btn-primary text-white">Send</label>
     </div>
   </div>
-</div>
+</div> -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <button
+      for="my-modal-5"
+      class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button
+    >
+    <h3 class="font-bold text-lg">Say Hello!</h3>
+    <div class="form-control">
+      <label class="label">
+        <span class="label-text font-semibold">Name</span>
+      </label>
+      <input type="text" class="input input-bordered" />
+    </div>
+    <div class="form-control">
+      <label class="label">
+        <span class="label-text font-semibold">Email</span>
+      </label>
+      <input type="text" class="input input-bordered" />
+    </div>
+    <div class="form-control">
+      <label class="label">
+        <span class="label-text font-semibold">Message</span>
+      </label>
+
+      <textarea class="textarea textarea-bordered"></textarea>
+    </div>
+    <div class="modal-action">
+      <label for="my-modal-6" class="btn btn-primary text-white">Send</label>
+    </div>
+  </form>
+</dialog>
