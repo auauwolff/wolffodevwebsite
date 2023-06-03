@@ -6,8 +6,8 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://duit.solutions/",
   integrations: [tailwind(), react(), sitemap()],
+  site: "https://duit.solutions/",
   output: "static",
   experimental: {
     assets: true,
