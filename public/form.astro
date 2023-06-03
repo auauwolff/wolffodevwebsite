@@ -1,0 +1,42 @@
+<form
+  method="dialog"
+  class="modal-box"
+  method="POST"
+  name="hello"
+  data-netlify="true"
+>
+  <input
+    type="hidden"
+    name="subject"
+    value="Contact from duitsolutions.netlify.app"
+  />
+  <button
+    for="my-modal-5"
+    class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button
+  >
+  <h3 class="font-bold text-lg">Say Hello!</h3>
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text font-semibold">Name</span>
+    </label>
+    <input type="text" name="name" class="input input-bordered" />
+  </div>
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text font-semibold">Email</span>
+    </label>
+    <input type="email" name="email" class="input input-bordered" />
+  </div>
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text font-semibold">Message</span>
+    </label>
+
+    <textarea name="message" class="textarea textarea-bordered"></textarea>
+  </div>
+  <div class="modal-action">
+    <button type="submit" for="my-modal-5" class="btn btn-primary text-white"
+      >Send</button
+    >
+  </div>
+</form>
