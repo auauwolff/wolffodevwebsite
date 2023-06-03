@@ -1,5 +1,11 @@
-<!-- <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-  <form method="dialog" class="modal-box" method="POST" netlify>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <form
+    method="dialog"
+    class="modal-box"
+    method="POST"
+    name="hello"
+    data-netlify="true"
+  >
     <input
       type="hidden"
       name="subject"
@@ -14,33 +20,20 @@
       <label class="label">
         <span class="label-text font-semibold">Name</span>
       </label>
-      <input
-        type="text"
-        name="name"
-        aria-label="name"
-        class="input input-bordered"
-      />
+      <input type="text" name="name" class="input input-bordered" />
     </div>
     <div class="form-control">
       <label class="label">
         <span class="label-text font-semibold">Email</span>
       </label>
-      <input
-        type="email"
-        name="email"
-        aria-label="email"
-        class="input input-bordered"
-      />
+      <input type="email" name="email" class="input input-bordered" />
     </div>
     <div class="form-control">
       <label class="label">
         <span class="label-text font-semibold">Message</span>
       </label>
 
-      <textarea
-        aria-label="message"
-        name="message"
-        class="textarea textarea-bordered"></textarea>
+      <textarea name="message" class="textarea textarea-bordered"></textarea>
     </div>
     <div class="modal-action">
       <button type="submit" for="my-modal-5" class="btn btn-primary text-white"
@@ -48,7 +41,9 @@
       >
     </div>
   </form>
-</dialog> --><!-- <form
+</dialog>
+
+<!-- <form
   class="contact-form"
   name="contact"
   autocomplete="off"
