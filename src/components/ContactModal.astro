@@ -5,25 +5,38 @@
       for="my-modal-5"
       class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button
     >
-    <h3 class="font-bold text-lg">Say Hello!</h3>
+    <p class="font-bold text-lg">Say Hello!</p>
     <div class="form-control">
       <label class="label">
         <span class="label-text font-semibold">Name</span>
       </label>
-      <input type="text" name="name" class="input input-bordered" />
+      <input
+        type="text"
+        name="name"
+        class="input input-bordered"
+        aria-label="name"
+      />
     </div>
     <div class="form-control">
       <label class="label">
         <span class="label-text font-semibold">Email</span>
       </label>
-      <input type="email" name="email" class="input input-bordered" />
+      <input
+        type="email"
+        name="email"
+        class="input input-bordered"
+        aria-label="email"
+      />
     </div>
     <div class="form-control">
       <label class="label">
         <span class="label-text font-semibold">Message</span>
       </label>
 
-      <textarea name="message" class="textarea textarea-bordered"></textarea>
+      <textarea
+        name="message"
+        class="textarea textarea-bordered"
+        aria-label="message"></textarea>
     </div>
     <div class="modal-action">
       <button type="submit" for="my-modal-5" class="btn btn-primary text-white"
@@ -32,39 +45,3 @@
     </div>
   </form>
 </dialog>
-
-<!-- <form
-  class="contact-form"
-  name="contact"
-  autocomplete="off"
-  method="POST"
-  action="/comingsoon/"
-  data-netlify="true"
->
-  <div class="input-container">
-    <input type="text" class="input-field input" id="fname" name="name" />
-    <label for="fname">Name</label>
-    <span>Name</span>
-  </div>
-  <div class="input-container">
-    <input
-      type="tel"
-      class="input-field mobile input"
-      id="mobile"
-      name="mobile"
-    />
-    <label for="mmobile">Mobile</label>
-    <span>Mobile</span>
-  </div>
-  <div class="input-container">
-    <input type="email" class="input-field input" id="email" name="email" />
-    <label for="email">Email</label>
-    <span>Email</span>
-  </div>
-  <div class="input-container">
-    <textarea name="message" class="text-field input" id="text"></textarea>
-    <label for="message">Message</label>
-    <span>Message</span>
-  </div>
-  <input type="submit" value="Send" class="btn" />
-</form> -->
