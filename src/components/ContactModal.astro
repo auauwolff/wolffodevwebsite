@@ -1,5 +1,10 @@
 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
   <form method="dialog" class="modal-box" data-netlify="true">
+    <input
+      type="hidden"
+      name="subject"
+      value="Contact from duitsolutions.netlify.app"
+    />
     <button
       for="my-modal-5"
       class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button
@@ -15,7 +20,7 @@
       <label class="label">
         <span class="label-text font-semibold">Email</span>
       </label>
-      <input type="text" aria-label="email" class="input input-bordered" />
+      <input type="email" aria-label="email" class="input input-bordered" />
     </div>
     <div class="form-control">
       <label class="label">
@@ -32,3 +37,23 @@
     </div>
   </form>
 </dialog>
+
+<form name="contact" method="POST" data-netlify="true">
+  <input
+    type="hidden"
+    name="subject"
+    value="Sales inquiry from mysitename.netlify.app"
+  />
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
