@@ -1,4 +1,7 @@
 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
   <form
     class="modal-box"
     name="contact"
@@ -7,10 +10,10 @@
     action="/thankyou/"
   >
     <input type="hidden" name="form-name" value="contact" />
-    <button
-      for="my-modal-5"
-      class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button
-    >
+    <!-- <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+      >✕</button
+    > -->
+
     <p class="font-bold text-lg">Say Hello!</p>
     <div class="form-control">
       <label class="label">
