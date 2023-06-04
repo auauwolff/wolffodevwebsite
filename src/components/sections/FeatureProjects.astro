@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import foodieslogo from "../../assets/images/foodieslogo.png";
+import tapandgrindlogo from "../../assets/images/tapandgrindlogo.jpg";
 ---
 
 <section id="projects">
@@ -21,27 +22,58 @@ import foodieslogo from "../../assets/images/foodieslogo.png";
       </p>
     </div>
 
-    <div class="card card-compact w-72 bg-base-100 shadow-xl h-80">
-      <figure>
-        <Image src={foodieslogo} alt="foodies logo" />
-      </figure>
-      <div class="card-body bg-seco">
-        <h2 class="card-title text-sm">Foodies Chefs</h2>
-        <p class="text-justify text-xs">
-          Foodies Chefs Meal Prep transformed with an eCommerce website. We
-          replaced WhatsApp with an intuitive online ordering platform, leading
-          to skyrocketing sales and an enhanced customer experience.
-        </p>
+    <div class="flex flex-col items-center justify-center">
+      <div class="card card-compact w-72 bg-base-100 shadow-xl h-80">
+        <figure>
+          <Image src={foodieslogo} alt="foodies logo" />
+        </figure>
+        <div class="card-body bg-seco">
+          <h2 class="card-title text-sm">Foodies Chefs</h2>
+          <p class="text-justify text-xs">
+            Foodies Chefs Meal Prep transformed with an eCommerce website. We
+            replaced WhatsApp with an intuitive online ordering platform,
+            leading to skyrocketing sales and an enhanced customer experience.
+          </p>
 
-        <div class="card-actions justify-between items-end mt-2">
-          <div class="justify-start">
-            <div class="badge badge-sm text-xs badge-outline">Website</div>
-            <div class="badge badge-sm text-xs badge-outline">Ecommerce</div>
+          <div class="card-actions justify-between items-end mt-2">
+            <div class="justify-start">
+              <div class="badge badge-sm text-xs badge-outline">Website</div>
+              <div class="badge badge-sm text-xs badge-outline">Ecommerce</div>
+            </div>
+            <div class="justify-end">
+              <a
+                href="https://www.foodieschefs.com/"
+                target="_blank"
+                class="btn btn-primary btn-xs text-white text-xs">View more</a
+              >
+            </div>
           </div>
-          <div class="justify-end">
-            <button class="btn btn-primary btn-xs text-white text-xs"
-              >View more</button
-            >
+        </div>
+      </div>
+
+      <div class="card card-compact w-72 bg-base-100 shadow-xl h-80 mt-6">
+        <figure>
+          <Image src={tapandgrindlogo} alt="Tap and Grind logo" width={200} />
+        </figure>
+        <div class="card-body bg-seco">
+          <h2 class="card-title text-sm">Tap & Grind Cafe</h2>
+          <p class="text-justify text-xs">
+            Website built and automated employee sign-in system. By streamlining
+            operations and showcasing our expertise in driving business success.
+          </p>
+
+          <div class="card-actions justify-between items-end mt-2">
+            <div class="justify-start">
+              <div class="badge badge-sm text-xs badge-outline">Website</div>
+              <div class="badge badge-sm text-xs badge-outline">Timesheets</div>
+            </div>
+            <div class="justify-end">
+              <a
+                href="https://tapandgrind.com.au/"
+                target="_blank"
+                class="btn btn-primary btn-xs text-white text-xs">View more</a
+              >
+            </div>
           </div>
         </div>
       </div>
