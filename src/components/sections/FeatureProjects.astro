@@ -1,9 +1,13 @@
 ---
+import { Image } from "astro:assets";
+import foodieslogo from "../../assets/images/foodieslogo.png";
 ---
 
 <section id="projects">
   <div class="bg-black py-20 px-10 lg:px-20">
-    <div class="flex flex-col justify-start lg:flex-row lg:justify-around">
+    <div
+      class="flex flex-col justify-start lg:flex-row lg:justify-around mb-10"
+    >
       <h1 class="text-white text-2xl font-semibold lg:text-4xl">
         Feature Projects
       </h1>
@@ -15,6 +19,32 @@
         projects and discover how we've helped businesses like yours achieve
         their goals through our expertise in IT solutions
       </p>
+    </div>
+
+    <div class="card card-compact w-96 bg-base-100 shadow-xl h-96">
+      <figure>
+        <Image src={foodieslogo} alt="foodies logo" />
+      </figure>
+      <div class="card-body bg-seco">
+        <h2 class="card-title">Foodies Chefs</h2>
+        <p class="text-justify">
+          Foodies Chefs Meal Prep transformed with an eCommerce website. We
+          replaced WhatsApp with an intuitive online ordering platform, leading
+          to skyrocketing sales and an enhanced customer experience.
+        </p>
+
+        <div class="card-actions justify-between items-end mt-2">
+          <div class="justify-start">
+            <div class="badge badge-sm text-xs badge-outline">Website</div>
+            <div class="badge badge-sm text-xs badge-outline">Ecommerce</div>
+          </div>
+          <div class="justify-end">
+            <button class="btn btn-primary btn-sm text-white text-xs"
+              >View more</button
+            >
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
