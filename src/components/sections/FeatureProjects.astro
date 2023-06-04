@@ -1,19 +1,20 @@
 ---
 import { Image } from "astro:assets";
 import foodieslogo from "../../assets/images/foodieslogo.png";
+import mariacoxinha from "../../assets/images/mariacoxinha.png";
 import tapandgrindlogo from "../../assets/images/tapandgrindlogo.jpg";
 ---
 
 <section id="projects">
-  <div class="bg-black py-20 px-10 lg:px-20 items-center">
+  <div class="bg-black py-20 px-10 lg:px-40 items-center">
     <div
-      class="flex flex-col justify-start lg:flex-row lg:justify-around mb-10"
+      class="flex flex-col lg:items-center justify-start lg:flex-row lg:justify-between mb-10"
     >
-      <h1 class="text-white text-2xl font-semibold lg:text-4xl">
+      <h1 class="text-white text-2xl font-semibold lg:text-4xl flex-1">
         Feature Projects
       </h1>
       <p
-        class="text-secondary text-justify font-semibold mt-2 lg:m-4 lg:text-lg lg:w-2/5"
+        class="text-secondary text-justify font-semibold mt-2 flex-1 lg:text-lg"
       >
         Explore Our Projects: We take pride in our work and are passionate about
         creating innovative solutions for our clients. Check out our latest
@@ -22,14 +23,18 @@ import tapandgrindlogo from "../../assets/images/tapandgrindlogo.jpg";
       </p>
     </div>
 
-    <div class="flex flex-col items-center justify-center">
-      <div class="card card-compact w-72 bg-base-100 shadow-xl h-80">
-        <figure>
+    <div
+      class="flex flex-col lg:flex-row items-center justify-center lg:justify-between"
+    >
+      <div
+        class="card card-compact w-72 lg:w-4/6 lg:mr-10 bg-base-100 shadow-xl h-80 lg:h-full"
+      >
+        <figure class="lg:h-96">
           <Image src={foodieslogo} alt="foodies logo" />
         </figure>
         <div class="card-body bg-seco">
-          <h2 class="card-title text-sm">Foodies Chefs</h2>
-          <p class="text-justify text-xs">
+          <h2 class="card-title text-sm lg:text-xl">Foodies Chefs</h2>
+          <p class="text-justify text-xs lg:text-lg">
             Foodies Chefs Meal Prep transformed with an eCommerce website. We
             replaced WhatsApp with an intuitive online ordering platform,
             leading to skyrocketing sales and an enhanced customer experience.
@@ -37,42 +42,91 @@ import tapandgrindlogo from "../../assets/images/tapandgrindlogo.jpg";
 
           <div class="card-actions justify-between items-end mt-2">
             <div class="justify-start">
-              <div class="badge badge-sm text-xs badge-outline">Website</div>
-              <div class="badge badge-sm text-xs badge-outline">Ecommerce</div>
+              <div class="badge badge-sm lg:badge-md text-xs badge-outline">
+                Website
+              </div>
+              <div class="badge badge-sm lg:badge-md text-xs badge-outline">
+                Ecommerce
+              </div>
             </div>
             <div class="justify-end">
               <a
                 href="https://www.foodieschefs.com/"
                 target="_blank"
-                class="btn btn-primary btn-xs text-white text-xs">View more</a
+                class="btn btn-primary btn-xs lg:btn-md text-white text-xs"
+                >View</a
               >
             </div>
           </div>
         </div>
       </div>
 
-      <div class="card card-compact w-72 bg-base-100 shadow-xl h-80 mt-6">
-        <figure>
-          <Image src={tapandgrindlogo} alt="Tap and Grind logo" width={200} />
-        </figure>
-        <div class="card-body bg-seco">
-          <h2 class="card-title text-sm">Tap & Grind Cafe</h2>
-          <p class="text-justify text-xs">
-            Website built and automated employee sign-in system. By streamlining
-            operations and showcasing our expertise in driving business success.
-          </p>
+      <div class="flex flex-col">
+        <div
+          class="card card-compact w-72 lg:w-full bg-base-100 shadow-xl h-80 lg:h-full mt-6"
+        >
+          <figure>
+            <Image src={tapandgrindlogo} alt="Tap and Grind logo" width={200} />
+          </figure>
+          <div class="card-body bg-seco">
+            <h2 class="card-title text-sm lg:text-xl">Tap & Grind Cafe</h2>
+            <p class="text-justify text-xs lg:text-lg">
+              Website built and automated employee sign-in system. By
+              streamlining operations and showcasing our expertise in driving
+              business success.
+            </p>
 
-          <div class="card-actions justify-between items-end mt-2">
-            <div class="justify-start">
-              <div class="badge badge-sm text-xs badge-outline">Website</div>
-              <div class="badge badge-sm text-xs badge-outline">Timesheets</div>
+            <div class="card-actions justify-between items-end mt-2">
+              <div class="justify-start">
+                <div class="badge badge-sm lg:badge-md text-xs badge-outline">
+                  Website
+                </div>
+                <div class="badge badge-sm lg:badge-md text-xs badge-outline">
+                  Timesheets
+                </div>
+              </div>
+              <div class="justify-end">
+                <a
+                  href="https://tapandgrind.com.au/"
+                  target="_blank"
+                  class="btn btn-primary btn-xs lg:btn-md text-white text-xs"
+                  >View</a
+                >
+              </div>
             </div>
-            <div class="justify-end">
-              <a
-                href="https://tapandgrind.com.au/"
-                target="_blank"
-                class="btn btn-primary btn-xs text-white text-xs">View more</a
-              >
+          </div>
+        </div>
+
+        <div
+          class="card card-compact w-72 lg:w-full bg-base-100 shadow-xl h-80 lg:h-full mt-6"
+        >
+          <figure>
+            <Image src={mariacoxinha} alt="Maria Coxinha logo" width={200} />
+          </figure>
+          <div class="card-body bg-seco">
+            <h2 class="card-title text-sm lg:text-xl">Maria Coxinha</h2>
+            <p class="text-justify text-xs lg:text-lg">
+              Featuring a captivating eCommerce website that elevated their
+              online presence and fueled their success.
+            </p>
+
+            <div class="card-actions justify-between items-end mt-2">
+              <div class="justify-start">
+                <div class="badge badge-sm lg:badge-md text-xs badge-outline">
+                  Website
+                </div>
+                <div class="badge badge-sm lg:badge-md text-xs badge-outline">
+                  Ecommerce
+                </div>
+              </div>
+              <div class="justify-end">
+                <a
+                  href="https://mariacoxinha.square.site/"
+                  target="_blank"
+                  class="btn btn-primary btn-xs lg:btn-md text-white text-xs"
+                  >View</a
+                >
+              </div>
             </div>
           </div>
         </div>
