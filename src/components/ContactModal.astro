@@ -1,56 +1,75 @@
 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-  <form
-    class="modal-box"
-    name="contact"
-    method="POST"
-    data-netlify="true"
-    action="/thankyou/"
+  <div
+    class="modal-backdrop"
+    onclick="document.getElementById('my_modal_5').close()"
   >
-    <input type="hidden" name="form-name" value="contact" />
-    <!-- <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
-      >✕</button
-    > -->
+  </div>
+  <div class="modal-box">
+    <button
+      class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+      onclick="document.getElementById('my_modal_5').close()">✕</button
+    >
 
     <p class="font-bold text-lg">Say Hello!</p>
-    <div class="form-control">
-      <label class="label">
-        <span class="label-text font-semibold">Name</span>
-      </label>
-      <input
-        type="text"
-        name="name"
-        class="input input-bordered"
-        aria-label="name"
-      />
-    </div>
-    <div class="form-control">
-      <label class="label">
-        <span class="label-text font-semibold">Email</span>
-      </label>
-      <input
-        type="email"
-        name="email"
-        class="input input-bordered"
-        aria-label="email"
-      />
-    </div>
-    <div class="form-control">
-      <label class="label">
-        <span class="label-text font-semibold">Message</span>
-      </label>
 
-      <textarea
-        name="message"
-        class="textarea textarea-bordered"
-        aria-label="message"></textarea>
-    </div>
-    <div class="modal-action">
-      <button type="submit" for="my-modal-5" class="btn btn-primary text-white"
-        >Send</button
-      >
-    </div>
-  </form>
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      action="/thankyou/"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <!-- Honeypot field for spam protection -->
+      <p style="display: none;">
+        <label
+          >Don't fill this out if you're human: <input
+            name="bot-field"
+          /></label
+        >
+      </p>
+
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text font-semibold">Name</span>
+        </label>
+        <input
+          type="text"
+          name="name"
+          class="input input-bordered"
+          aria-label="name"
+          required
+        />
+      </div>
+
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text font-semibold">Email</span>
+        </label>
+        <input
+          type="email"
+          name="email"
+          class="input input-bordered"
+          aria-label="email"
+          required
+        />
+      </div>
+
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text font-semibold">Message</span>
+        </label>
+        <textarea
+          name="message"
+          class="textarea textarea-bordered"
+          aria-label="message"
+          required
+          rows="4"></textarea>
+      </div>
+
+      <div class="modal-action">
+        <button type="submit" class="btn btn-primary text-white"> Send</button>
+      </div>
+    </form>
+  </div>
 </dialog>
