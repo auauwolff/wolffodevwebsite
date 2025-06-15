@@ -1,6 +1,6 @@
 import { useStore } from "@nanostores/react";
 import { isMenuOpen } from "../stores/GlobalStore";
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 
 const MenuButton = ({ children }) => {
   const open = useStore(isMenuOpen);

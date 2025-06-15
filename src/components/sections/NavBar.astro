@@ -1,13 +1,13 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 ---
 
 <div class="navbar bg-base-100 p-6 lg:p-10 lg:px-14">
-  <Icon name="logo" width={100} class="cursor-pointer" />
+  <Icon name="logo" class="cursor-pointer w-30 h-30 lg:w-50 lg:h-50" />
   <div class="navbar-end flex-1">
     <div class="dropdown dropdown-end">
       <label tabindex="0" class="btn btn-ghost lg:hidden">
-        <Icon name="menu" width={25} class="cursor-pointer" />
+        <Icon name="menu" class="cursor-pointer w-6 h-6" />
       </label>
       <ul
         tabindex="0"
