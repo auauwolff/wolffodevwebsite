@@ -16,134 +16,178 @@ import square_logo from "../../assets/images/square_logo.png";
   </div>
 
   <!-- Mobile: Show swipe hint -->
-  <div class="lg:hidden text-center mb-4">
-    <p class="text-secondary text-sm">← Swipe to see more →</p>
+  <div class="md:hidden text-center mb-6 mt-4">
+    <p class="text-secondary text-sm animate-pulse">← Swipe to see more →</p>
   </div>
 
-  <!-- Carousel Container with fade edges -->
-  <div class="relative w-full max-w-6xl">
-    <!-- Left fade gradient -->
-    <div
-      class="absolute left-0 top-0 w-8 h-full bg-gradient-to-r from-black to-transparent z-10 lg:block hidden pointer-events-none"
-    >
-    </div>
-    <!-- Right fade gradient -->
-    <div
-      class="absolute right-0 top-0 w-8 h-full bg-gradient-to-l from-black to-transparent z-10 lg:block hidden pointer-events-none"
-    >
-    </div>
-
+  <!-- Container -->
+  <div class="relative w-full flex justify-center px-4 md:px-8 lg:px-12">
     <div
       id="tech-carousel"
-      class="carousel carousel-center p-4 space-x-4 bg-neutral rounded-box py-12 lg:py-20 max-w-xs lg:max-w-none scroll-smooth snap-x snap-mandatory overflow-x-auto"
+      class="w-full max-w-xs md:max-w-6xl bg-neutral rounded-box py-8 lg:py-16 
+             carousel carousel-center scroll-smooth snap-x snap-mandatory 
+             overflow-x-auto md:overflow-x-hidden md:overflow-y-hidden md:flex md:justify-center md:items-stretch md:gap-4 lg:gap-6"
     >
+      <!-- Spacer for centering first item on mobile only -->
+      <div class="carousel-item shrink-0 md:hidden" style="width: calc(50% - 144px);"></div>
+      
       <div
-        class="carousel-item flex flex-col items-center justify-center max-w-sm text-center snap-center"
+        class="carousel-item flex flex-col items-center justify-center w-72 md:w-auto md:flex-1 md:max-w-xs text-center snap-center shrink-0 md:shrink px-2 md:px-4"
       >
-        <Image alt="Figma logo" height={60} width={60} src={figma_log} />
-        <p class="text-white text-lg pt-2">Figma</p>
-        <p class="text-secondary font-semibold text-sm pt-2 px-10">
+        <div class="h-20 flex items-center justify-center">
+          <Image alt="Figma logo" height={60} width={60} src={figma_log} />
+        </div>
+        <p class="text-white text-lg font-semibold mt-4">Figma</p>
+        <p class="text-secondary text-sm mt-3 px-4 min-h-[3rem]">
           A cloud-based design tool that allows for collaboration and
           prototyping.
         </p>
       </div>
 
       <div
-        class="carousel-item flex flex-col items-center justify-center max-w-sm text-center snap-center"
+        class="carousel-item flex flex-col items-center justify-center w-72 md:w-auto md:flex-1 md:max-w-xs text-center snap-center shrink-0 md:shrink px-2 md:px-4"
       >
-        <Image alt="Astro logo" height={80} width={80} src={astro_logo} />
-        <p class="text-white text-lg pt-2">Astro</p>
-        <p class="text-secondary font-semibold text-sm p-3 px-10">
+        <div class="h-20 flex items-center justify-center">
+          <Image alt="Astro logo" height={80} width={80} src={astro_logo} />
+        </div>
+        <p class="text-white text-lg font-semibold mt-4">Astro</p>
+        <p class="text-secondary text-sm mt-3 px-4 min-h-[3rem]">
           A modern static site builder that optimizes performance and developer
           experience.
         </p>
       </div>
+      
       <div
-        class="carousel-item flex flex-col items-center justify-center max-w-sm text-center snap-center"
+        class="carousel-item flex flex-col items-center justify-center w-72 md:w-auto md:flex-1 md:max-w-xs text-center snap-center shrink-0 md:shrink px-2 md:px-4"
       >
-        <Image alt="React logo" height={80} width={80} src={react_logo} />
-        <p class="text-white text-lg pt-2">React</p>
-        <p class="text-secondary font-semibold text-sm p-3 px-10">
+        <div class="h-20 flex items-center justify-center">
+          <Image alt="React logo" height={80} width={80} src={react_logo} />
+        </div>
+        <p class="text-white text-lg font-semibold mt-4">React</p>
+        <p class="text-secondary text-sm mt-3 px-4 min-h-[3rem]">
           A popular JavaScript library for building user interfaces.
         </p>
       </div>
+      
       <div
-        class="carousel-item flex flex-col items-center justify-center max-w-sm text-center snap-center"
+        class="carousel-item flex flex-col items-center justify-center w-72 md:w-auto md:flex-1 md:max-w-xs text-center snap-center shrink-0 md:shrink px-2 md:px-4"
       >
-        <Image alt="Squareup logo" height={80} width={80} src={square_logo} />
-        <p class="text-white text-lg pt-2">Squareup</p>
-        <p class="text-secondary font-semibold text-sm p-3 px-10">
+        <div class="h-20 flex items-center justify-center">
+          <Image alt="Squareup logo" height={80} width={80} src={square_logo} />
+        </div>
+        <p class="text-white text-lg font-semibold mt-4">Squareup</p>
+        <p class="text-secondary text-sm mt-3 px-4 min-h-[3rem]">
           A payment processing platform for small businesses and online stores.
         </p>
       </div>
-      <!-- <div
-        class="carousel-item flex flex-col items-center justify-center max-w-sm text-center snap-center"
-      >
-        <Image alt="Shopify logo" height={80} width={80} src={shopify_logo} />
-        <p class="text-white text-lg pt-2">Shopify</p>
-        <p class="text-secondary font-semibold text-sm p-3">
-          An e-commerce platform for online stores that provides tools for
-          managing inventory, shipping, and payments.
-        </p>
-      </div>
-    </div> -->
+      
+      <!-- Spacer for centering last item on mobile only -->
+      <div class="carousel-item shrink-0 md:hidden" style="width: calc(50% - 144px);"></div>
     </div>
   </div>
 
-  <!-- Carousel Indicators/Dots -->
-  <div class="flex justify-center mt-6 space-x-2 lg:hidden">
+  <!-- Carousel Indicators/Dots - Only show on mobile -->
+  <div class="flex justify-center mt-8 space-x-3 md:hidden">
     <button
-      class="carousel-dot w-3 h-3 rounded-full bg-secondary hover:bg-primary transition-colors duration-200"
-      onclick="document.getElementById('tech-carousel').scrollTo({left: 0, behavior: 'smooth'})"
+      class="carousel-dot w-2.5 h-2.5 rounded-full bg-primary transition-all duration-300"
+      data-index="0"
+      aria-label="Go to slide 1"
     ></button>
     <button
-      class="carousel-dot w-3 h-3 rounded-full bg-secondary hover:bg-primary transition-colors duration-200"
-      onclick="document.getElementById('tech-carousel').scrollTo({left: document.getElementById('tech-carousel').scrollWidth * 0.33, behavior: 'smooth'})"
+      class="carousel-dot w-2.5 h-2.5 rounded-full bg-secondary hover:bg-primary/50 transition-all duration-300"
+      data-index="1"
+      aria-label="Go to slide 2"
     ></button>
     <button
-      class="carousel-dot w-3 h-3 rounded-full bg-secondary hover:bg-primary transition-colors duration-200"
-      onclick="document.getElementById('tech-carousel').scrollTo({left: document.getElementById('tech-carousel').scrollWidth * 0.66, behavior: 'smooth'})"
+      class="carousel-dot w-2.5 h-2.5 rounded-full bg-secondary hover:bg-primary/50 transition-all duration-300"
+      data-index="2"
+      aria-label="Go to slide 3"
     ></button>
     <button
-      class="carousel-dot w-3 h-3 rounded-full bg-secondary hover:bg-primary transition-colors duration-200"
-      onclick="document.getElementById('tech-carousel').scrollTo({left: document.getElementById('tech-carousel').scrollWidth, behavior: 'smooth'})"
+      class="carousel-dot w-2.5 h-2.5 rounded-full bg-secondary hover:bg-primary/50 transition-all duration-300"
+      data-index="3"
+      aria-label="Go to slide 4"
     ></button>
   </div>
 </div>
 
 <script>
-  // Update active dot based on scroll position
   document.addEventListener("DOMContentLoaded", () => {
     const carousel = document.getElementById("tech-carousel");
     const dots = document.querySelectorAll(".carousel-dot");
+    const items = carousel?.querySelectorAll(".carousel-item:not([style])"); // Exclude spacers with inline styles
+    
+    // Only apply carousel functionality on mobile/tablet (< md breakpoint)
+    const isMobile = () => window.innerWidth < 768;
 
-    if (carousel && dots.length > 0) {
+    if (carousel && dots.length > 0 && items && isMobile()) {
+      // Calculate item width including gaps
+      const getItemWidth = () => {
+        const firstItem = items[0] as HTMLElement;
+        if (!firstItem) return 0;
+        return firstItem.offsetWidth;
+      };
+
+      // Update active dot based on scroll position
       const updateActiveDot = () => {
         const scrollLeft = carousel.scrollLeft;
-        const scrollWidth = carousel.scrollWidth - carousel.clientWidth;
-        const scrollPercentage = scrollLeft / scrollWidth;
-
-        // Determine which dot should be active
-        let activeDotIndex = Math.round(scrollPercentage * (dots.length - 1));
-        activeDotIndex = Math.max(0, Math.min(activeDotIndex, dots.length - 1));
+        const itemWidth = getItemWidth();
+        const spacer = carousel.querySelector(".carousel-item.shrink-0.lg\\:hidden") as HTMLElement;
+        const spacerWidth = spacer ? spacer.offsetWidth : 0;
+        
+        if (itemWidth === 0) return;
+        
+        // Calculate which item is most visible, accounting for the spacer
+        const adjustedScroll = Math.max(0, scrollLeft - spacerWidth);
+        let activeIndex = Math.round(adjustedScroll / itemWidth);
+        activeIndex = Math.max(0, Math.min(activeIndex, dots.length - 1));
 
         // Update dot styles
         dots.forEach((dot, index) => {
-          if (index === activeDotIndex) {
-            dot.classList.remove("bg-secondary");
+          if (index === activeIndex) {
+            dot.classList.remove("bg-secondary", "hover:bg-primary/50");
             dot.classList.add("bg-primary");
           } else {
             dot.classList.remove("bg-primary");
-            dot.classList.add("bg-secondary");
+            dot.classList.add("bg-secondary", "hover:bg-primary/50");
           }
         });
       };
 
-      // Update on scroll
-      carousel.addEventListener("scroll", updateActiveDot);
+      // Add click handlers to dots
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          const itemWidth = getItemWidth();
+          const spacer = carousel.querySelector(".carousel-item.shrink-0.lg\\:hidden") as HTMLElement;
+          const spacerWidth = spacer ? spacer.offsetWidth : 0;
+          const targetScroll = spacerWidth + (index * itemWidth);
+          
+          carousel.scrollTo({
+            left: targetScroll,
+            behavior: "smooth"
+          });
+        });
+      });
+
+      // Update on scroll with debouncing
+      let scrollTimeout: NodeJS.Timeout;
+      carousel.addEventListener("scroll", () => {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(updateActiveDot, 50);
+      });
 
       // Initial update
       updateActiveDot();
+
+      // Update on window resize
+      window.addEventListener("resize", () => {
+        if (isMobile()) {
+          updateActiveDot();
+        }
+      });
+    } else if (carousel && !isMobile()) {
+      // Remove scroll on desktop
+      carousel.style.overflowX = 'visible';
     }
   });
 </script>
