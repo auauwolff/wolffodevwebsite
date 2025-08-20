@@ -1,0 +1,92 @@
+---
+import { Image } from "astro:assets";
+import clocker_logo from "../../assets/images/clocker_logo.png";
+---
+
+<section id="clocker" class="bg-black py-20 px-10 lg:px-40">
+  <div class="max-w-7xl mx-auto">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl lg:text-5xl font-bold text-white mb-4">
+        Featured Project
+      </h2>
+      <p class="text-xl text-secondary max-w-3xl mx-auto">
+        Discover how we've revolutionized workforce management for hospitality businesses
+      </p>
+    </div>
+
+    <!-- Main Showcase -->
+    <div class="bg-base-100 rounded-2xl shadow-xl shadow-secondary/30 p-10 lg:p-16">
+      <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+        <!-- Logo and Title -->
+        <div class="flex-shrink-0">
+          <Image src={clocker_logo} alt="Clocker Logo" class="h-24 lg:h-32 w-auto" />
+        </div>
+        
+        <!-- Project Info -->
+        <div class="flex-1 text-center lg:text-left">
+          <h3 class="text-2xl lg:text-3xl font-bold text-primary mb-4">
+            Smart Scheduling, Simplified Timesheets
+          </h3>
+          
+          <p class="text-base text-gray-600 mb-8 leading-relaxed max-w-3xl">
+            A comprehensive workforce management solution designed specifically for hospitality businesses. 
+            Streamline staff scheduling, track hours accurately, and automate wage calculations - all in one intuitive platform.
+          </p>
+
+          <!-- CTA Button -->
+          <a
+            href="https://clockersheets.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary text-white btn-lg"
+          >
+            Visit Live Site
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Features Grid -->
+    <div class="grid md:grid-cols-3 gap-8 mt-16">
+      <div class="text-center">
+        <div class="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+        <h4 class="font-semibold text-lg mb-2 text-white">Real-time Updates</h4>
+        <p class="text-sm text-secondary">
+          Track staff hours and breaks with instant synchronization across all devices
+        </p>
+      </div>
+      
+      <div class="text-center">
+        <div class="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+          </svg>
+        </div>
+        <h4 class="font-semibold text-lg mb-2 text-white">Comprehensive Analytics</h4>
+        <p class="text-sm text-secondary">
+          Gain insights with detailed reports on labor costs, overtime trends, and staff performance
+        </p>
+      </div>
+      
+      <div class="text-center">
+        <div class="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+          </svg>
+        </div>
+        <h4 class="font-semibold text-lg mb-2 text-white">Flexible Configuration</h4>
+        <p class="text-sm text-secondary">
+          Customize wage rates for different days, manage multiple locations, and set role-based permissions
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
