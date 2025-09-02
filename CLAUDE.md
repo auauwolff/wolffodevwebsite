@@ -35,6 +35,25 @@ npx astro check           # Type-check Astro components
   - Must be imported into Astro components with client directives (e.g., `client:load`)
   - Example: `MenuButton.tsx` uses nanostores for global state
 
+### Project Showcase Sections
+The site features dedicated showcase components for major projects:
+- **ClockerShowcase.astro**: Featured project section for Clocker app
+- **PetrolSaverShowcase.astro**: Latest innovation section for Petrol Saver app
+
+#### Showcase Component Structure:
+1. **Header**: Eye-catching title and subtitle
+2. **Main Card**: 
+   - Logo (h-20 sm:h-24 lg:h-32 for responsive sizing)
+   - Project title and description
+   - CTA button with external link icon
+3. **Feature Grid**: 3-column grid highlighting key features with icons
+
+#### Mobile Optimization:
+- Padding: `p-6 sm:p-8 lg:p-16` for responsive spacing
+- Text sizes: `text-xl sm:text-2xl lg:text-3xl` for titles
+- Button sizes: `btn-md lg:btn-lg` for CTAs
+- Gap spacing: `gap-6 lg:gap-16` between elements
+
 ### Global State Management
 - Uses `nanostores` with atoms for simple reactive state
 - Store definitions in `src/stores/GlobalStore.ts`
@@ -50,6 +69,16 @@ npx astro check           # Type-check Astro components
 - Pages in `src/pages/` become routes automatically
 - Main layout wrapper: `src/layouts/MainLayout.astro` (includes SEO, meta tags)
 - Component sections compose pages (Hero, Footer, etc.)
+- Current page composition in `index.astro`:
+  - Hero
+  - ContactModal
+  - OurTechStack
+  - OurUniqueApproach
+  - ClockerShowcase (Featured project)
+  - PetrolSaverShowcase (Latest innovation)
+  - LetsWorkTogether
+  - Footer
+  - (FeatureProjects section currently commented out)
 
 ### Asset Management
 - Static assets in `public/` (served at root)
