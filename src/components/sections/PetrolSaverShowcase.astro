@@ -1,0 +1,93 @@
+---
+import { Image } from "astro:assets";
+import gasPumpLogo from "../../assets/images/gas-pump.svg";
+---
+
+<section id="petrol-saver" class="bg-neutral py-20 px-10 lg:px-40">
+  <div class="max-w-7xl mx-auto">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl lg:text-5xl font-bold text-white mb-4">
+        Latest Innovation
+      </h2>
+      <p class="text-xl text-secondary max-w-3xl mx-auto">
+        Real-time fuel price tracking that saves Queensland drivers money every day
+      </p>
+    </div>
+
+    <!-- Main Showcase -->
+    <div class="bg-base-100 rounded-2xl shadow-xl shadow-primary/30 p-10 lg:p-16">
+      <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+        <!-- Logo and Title -->
+        <div class="flex-shrink-0">
+          <Image src={gasPumpLogo} alt="Petrol Saver Logo" class="h-24 lg:h-32 w-auto" />
+        </div>
+        
+        <!-- Project Info -->
+        <div class="flex-1 text-center lg:text-left">
+          <h3 class="text-2xl lg:text-3xl font-bold text-primary mb-4">
+            Find Cheaper Fuel, Instantly
+          </h3>
+          
+          <p class="text-base text-gray-600 mb-8 leading-relaxed max-w-3xl">
+            Interactive fuel price mapping application for Queensland. Access real-time government data to find the cheapest stations, 
+            save your favorites, and navigate directly - all through a mobile-optimized interface designed for drivers on the go.
+          </p>
+
+          <!-- CTA Button -->
+          <a
+            href="https://petrol-saver.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary text-white btn-lg"
+          >
+            Try Petrol Saver
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Features Grid -->
+    <div class="grid md:grid-cols-3 gap-8 mt-16">
+      <div class="text-center">
+        <div class="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+          </svg>
+        </div>
+        <h4 class="font-semibold text-lg mb-2 text-white">Live Price Maps</h4>
+        <p class="text-sm text-secondary">
+          Interactive map with color-coded stations showing real-time fuel prices from Queensland Government API
+        </p>
+      </div>
+      
+      <div class="text-center">
+        <div class="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+          </svg>
+        </div>
+        <h4 class="font-semibold text-lg mb-2 text-white">Smart Favorites</h4>
+        <p class="text-sm text-secondary">
+          Save frequently visited stations and get instant price comparisons with one-tap navigation
+        </p>
+      </div>
+      
+      <div class="text-center">
+        <div class="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+          </svg>
+        </div>
+        <h4 class="font-semibold text-lg mb-2 text-white">Mobile Optimized</h4>
+        <p class="text-sm text-secondary">
+          Touch-first design with advanced filtering by fuel type, brand, and price range for drivers
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
